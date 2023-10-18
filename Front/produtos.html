@@ -12,32 +12,53 @@
     <a href="index.html">
         <img src="img/icons8-gestão-de-cliente-50.png" alt="Cliente"> Cadastro de Cliente
     </a>
+
+    <a href="vendedor.html">
+        <img src="img/icons8-gestão-de-cliente-16.png" alt="Vendedor"> Vendedor
+    </a>
+
     <a href="produtos.html">
-        <img src="img/icons8-produto-novo-80.png"Produto"> Cadastro de Produto
+        <img src="img/icons8-produto-novo-80.png" alt="Produto"> Cadastro de Produto
     </a>
     <a href="estoque.html">
         <img src="img/icons8-vender-estoque-80.png" alt="Estoque"> Estoque
     </a>
-    <a href="#">
-        <img src="img/icons8-send-package-64.png" alt="Pedidos"> Pedidos
-    </a>
-    <a href="#">
+  
+    <a href="pedidos.html">
+        <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
+    </a> 
+
+
+    <a href="enviados.html">
         <img src="img/icons8-dados-de-saída-50.png" alt="Enviados"> Enviados
     </a>
-   </div>
+
+</div>
+
 
 <!-- Cadastro de Cliente -->
 <div class="cadastro">
     <h1>Cadastro de Produto</h1>
     <form id="cadastroProduto">
+     
         <div class="campo">
             <label for="nome">Nome do Produto:</label>
             <input type="text" id="nome" name="nome" required>
         </div>
 
         <div class="campo">
-            <label for="categoria">Categoria:</label>
-            <input type="text" id="categoria" name="categoria">
+            <label for="marca,">Marca:</label>
+            <input type="text" id="marca," name="marca,">
+        </div>
+
+        <div class="campo">
+            <label for="unidadeDeMedida">Unidade de Medida</label>
+            <input type="text" id="unidadeDeMedida" name="unidadeDeMedida">
+        </div>
+
+        <div class="campo">
+            <label for="estoque">Estoque Atual:</label>
+            <input type="text" id="estoque" name="estoque">
         </div>
 
         <div class="campo">
@@ -46,28 +67,13 @@
         </div>
 
         <div class="campo">
-            <label for="estoque">Quantidade em Estoque:</label>
-            <input type="text" id="estoque" name="estoque">
-        </div>
-
-        <div class="campo">
             <label for="fornecedor">Fornecedor:</label>
             <input type="text" id="fornecedor" name="fornecedor">
         </div>
 
         <div class="campo">
-            <label for="imagem">Imagem do Produto:</label>
-            <input type="text" id="imagem" name="imagem">
-        </div>
-
-        <div class="campo">
-            <label for="codigoDeBarras">Código de Barras:</label>
-            <input type="text" id="codigoDeBarras" name="codigoDeBarras">
-        </div>
-
-        <div class="campo">
             <label for="dataDeFabricacaoEValidade">Data de Fabricação e Validade:</label>
-            <input type="text" id="dataDeFabricacaoEValidade" name="dataDeFabricacaoEValidade">
+            <input type="date" id="dataDeFabricacaoEValidade" name="dataDeFabricacaoEValidade">
         </div>
 
         <div class="campo">
@@ -80,7 +86,7 @@
 </div>
 
  <!-- Rodapé -->
- <div class="rodapé">
+ <div class="rodape">
     <p>© IESB BayArea 2023</p>
 </div>
 </body>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Vendedor</title>
+</head>
+<body>
+ <!-- Barra de menu -->
+ <div class="menu">
+    <a href="index.html">
+        <img src="img/icons8-gestão-de-cliente-50.png" alt="Cliente"> Cadastro de Cliente
+    </a>
+
+    <a href="vendedor.html">
+        <img src="img/icons8-gestão-de-cliente-16.png" alt="Vendedor"> Vendedor
+    </a>
+
+    <a href="produtos.html">
+        <img src="img/icons8-produto-novo-80.png" alt="Produto"> Cadastro de Produto
+    </a>
+    <a href="estoque.html">
+        <img src="img/icons8-vender-estoque-80.png" alt="Estoque"> Estoque
+    </a>
+   
+    <a href="pedidos.html">
+        <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
+    </a> 
+
+    <a href="enviados.html">
+        <img src="img/icons8-dados-de-saída-50.png" alt="Enviados"> Enviados
+    </a>
+
+</div>
+
+
+    <!-- Cadastro de Vendedor -->
+    <div class="cadastro">
+        <h1>Cadastro de Vendedor</h1>
+
+        <form id="cadastroVendedor">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="campo">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+
+            <!-- O sistema gera um código de identificação único para cada vendedor -->
+            <div class="campo">
+                <label>Código de Identificação:</label>
+                <span id="codigoIdentificacao">Gere um código único aqui</span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+</div>
+
+<!-- Rodapé -->
+<div class="rodape">
+    <p>© IESB BayArea 2023</p>
+</div>
+</body>
+</html>
