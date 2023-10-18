@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+ /* Estilos para o corpo da página */
+body {
+  background-color: rgb(255, 253, 253);
+  /* background-image: url(img/3872170.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para a barra de menu à esquerda */
+.menu {
+  background-color: #f3e3e370; /* Cor de fundo da barra de menu à esquerda (cinza claro) */
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* Estilos para os itens do menu à esquerda */
+.menu a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333; /* Cor do texto dos itens do menu (cinza escuro) */
+  display: flex;
+}
+
+/* Estilos para os itens do menu à esquerda quando o mouse passa por cima */
+.menu a:hover {
+  background-color: #ff0000; /* Cor de fundo quando passa o mouse por cima */
+  color: #fff; /*Cor do texto dos itens do menu quando passa o mouse por cima (branco)*/
+}
+
+/* Estilos para o conteúdo principal */
+.cadastro {
+  margin-left: 250px; /* Dê margem à largura da barra de menu */
+  padding: 20px;
+  text-align: left; /* Alinhe o texto à esquerda no conteúdo principal */
+  flex: 1; /* Ocupa todo o espaço disponível no conteúdo */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cadastro {
+  display: flex;
+}
+
+/* Estilos para separar os itens no conteúdo principal */
+.cadastro .item {
+  margin-bottom: 20px; /* Adicione espaço entre os itens */
+  border-bottom: 1px solid #ff0000; /* Adicione uma linha separadora */
+  padding-bottom: 20px; /* Espaçamento inferior para a linha */
+}
+
+.campo{
+  margin: 10px 0;
+  display: flex;
+}
+
+.campo > label {
+  /* flex-grow: 1; */
+  width: 300px;
+}
+
+.campo > input {
+  flex: 1;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+  background-color: #ff0000b7; /* Cor de fundo do rodapé (cinza claro) */
+  text-align: center; /* Alinhe o texto à esquerda no rodapé */
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+input {
+  border-radius: solid 1px rgba(177, 177, 177, 0.041);
+  background-color: #968f8f0c;
+}

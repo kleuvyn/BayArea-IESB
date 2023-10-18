@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+   <!-- Barra de menu -->
+   <div class="menu">
+    <a href="index.html">Cadastro de Cliente</a>
+    <a href="produtos.html">Cadastro Produto</a>
+    <a href="#">Estoque</a>
+    <a href="#">Pedidos</a>
+    <a href="#">Enviados</a>
+    
+</div>
+
+<!-- Cadastro de Cliente -->
+<div class="cadastro">
+    <h1>Cadastro de Produto</h1>
+    <form id="cadastroProduto">
+        <div class="campo">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" name="categoria">
+        </div>
+
+        <div class="campo">
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" name="preco">
+        </div>
+
+        <div class="campo">
+            <label for="estoque">Quantidade em Estoque:</label>
+            <input type="text" id="estoque" name="estoque">
+        </div>
+
+        <div class="campo">
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" id="fornecedor" name="fornecedor">
+        </div>
+
+        <div class="campo">
+            <label for="imagem">Imagem do Produto:</label>
+            <input type="text" id="imagem" name="imagem">
+        </div>
+
+        <div class="campo">
+            <label for="codigoDeBarras">Código de Barras:</label>
+            <input type="text" id="codigoDeBarras" name="codigoDeBarras">
+        </div>
+
+        <div class="campo">
+            <label for="dataDeFabricacaoEValidade">Data de Fabricação e Validade:</label>
+            <input type="text" id="dataDeFabricacaoEValidade" name="dataDeFabricacaoEValidade">
+        </div>
+
+        <div class="campo">
+            <label for="descricao">Descrição do Produto:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+
+    
+ <!-- Rodapé -->
+ <div class="rodape">
+    <p>© IESB BayArea 2023</p>
+</div>
+</body>
+</html>
