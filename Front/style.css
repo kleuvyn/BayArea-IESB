@@ -5,31 +5,36 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100vh; /* Usar min-height em vez de height */
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centralize o conteúdo horizontalmente */
+    align-items: center; /* Centralize o conteúdo verticalmente */
 }
+
 
 /* Estilos para a barra de menu à esquerda */
 .menu {
-    background-color:#dbdbdbb7;
+    background-color: #dbdbdb;
     font-style: italic;
     width: 250px;
     position: fixed;
     top: 0;
     left: 0;
-    height:100%;
+    height: 100%;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Estilize as imagens nos links do menu */
 .menu a img {
-    width: 25px; /* Defina a largura desejada para as imagens */
-    height: 25px; /* Defina a altura desejada para as imagens */
-    margin-right: 8px; /* Adicione um espaçamento entre a imagem e o texto (opcional) */
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
 
 .menu a {
@@ -38,7 +43,7 @@ body {
     font-size: 20px;
     color: #333;
     display: flex;
-    align-items: center; /* Centralize o texto verticalmente com a imagem */
+    align-items: center;
 }
 
 .menu a:hover {
@@ -47,18 +52,14 @@ body {
 }
 
 /* Estilos para o conteúdo principal */
-.cadastro {
-    margin-left: 250px;
+.conteudo {
     padding: 20px;
-    text-align: left;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 50px;
+    align-items: center;
 }
 
-.cadastro h1 {
+.conteudo h1 {
     font-size: 24px;
 }
 
@@ -82,14 +83,68 @@ body {
     border-radius: 5px;
 }
 
+/* Estilos para o botão de menu */
+#menu-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Estilos para a lista de opções do menu */
+#menu-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+#menu-options.show-options {
+    display: block;
+}
+
+#menu-options li {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #333;
+}
+
+#menu-options a:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Estilos para o botão de menu com imagem */
+#menu-toggle img {
+    width: 25px;
+    height: 25px;
+}
+
+.radio-buttons button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.radio-buttons button:hover {
+    background-color: #cc0000;
+}
 
 /* Estilos para o rodapé */
-.rodape {
+/* .rodape {
     background-color: #ff0000b7;
     text-align: center;
     padding: 10px 0;
     width: 100%;
     color: #fff;
-    position: relative;
+    position:absolute;
     bottom: 0;
-}
+} */

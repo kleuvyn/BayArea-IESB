@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <title>Cadastro de Vendedor</title>
 </head>
 <body>
 <!-- Barra de menu -->
 <div class="menu">
-    <a href="index.html">
-        <img src="img/icons8-cliente-50.png" alt="Cliente"> Cadastro de Cliente
-    </a>
+    <button id="menu-toggle" onclick="toggleMenu()">
+        <img src="img/menu.png" alt="Menu">
+    </button>
 
-    <a href="vendedor.html">
-        <img src="img/icons8-vendedor-50.png" alt="Vendedor"> Cadastro de Vendedor 
-    </a>
+    <ul id="menu-options">
+        <a href="index.html">
+            <img src="img/icons8-cliente-50.png" alt="Cliente"> Cadastro de Cliente
+        </a>
+    
+        <a href="vendedor.html">
+            <img src="img/icons8-vendedor-50.png" alt="Vendedor"> Cadastro de Vendedor 
+        </a>
+    
+        <a href="produtos.html">
+            <img src="img/icons8-produtos-50.png" alt="Produtos"> Cadastro de Produto
+        </a>
 
-    <a href="produtos.html">
-        <img src="img/icons8-produtos-50.png" alt="Produtos"> Cadastro de Produto
-    </a>
-    <a href="estoque.html">
-        <img src="img/icons8-stocks-64.png" alt="Estoque"> Cadastro de Estoque
-    </a>
-
-    <a href="vendas.html">
-        <img src="img/icons8-vendas-50.png" alt="Vendas"> Vendas
-    </a>
-
-    <a href="pedidos.html">
-        <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
-    </a>
-
-    <a href="registroPedido.html">
-        <img src="img/icons8-código-de-barras-80.png" alt="registro Pedido"> Registro de Pedido
-    </a>
-
-
-    <a href="enviados.html">
-        <img src="img/icons8-enviado-50.png" alt="Enviados"> Enviados
-    </a>
-
+        <a href="estoque.html">
+            <img src="img/icons8-stocks-64.png" alt="Estoque"> Cadastro de Estoque
+        </a>
+    
+        <a href="vendas.html">
+            <img src="img/icons8-vendas-50.png" alt="Vendas"> Vendas
+        </a>
+    
+        <a href="pedidos.html">
+            <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
+        </a>
+    
+        <a href="registroPedido.html">
+            <img src="img/icons8-código-de-barras-80.png" alt="registro Pedido"> Registro de Pedido
+        </a>
+    
+        <a href="enviados.html">
+            <img src="img/icons8-enviado-50.png" alt="Enviados"> Enviados
+        </a>
+    </ul>
 </div>
     <!-- Cadastro de Vendedor -->
     <div class="cadastro">
@@ -88,8 +94,8 @@
 </div>
 
 <!-- Rodapé -->
-<div class="rodape">
+<!-- <div class="rodape">
     <p>© IESB BayArea 2023</p>
-</div>
+</div> -->
 </body>
 </html>
