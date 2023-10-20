@@ -28,7 +28,7 @@
             <img src="img/quadrado-vermelho-300x300.png" alt="Produtos"> Cadastro de Produto
         </a>
 
-        <a href="cadastroProdutos.html">
+        <a href="cadastroCliente.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Cliente"> Cadastro de Cliente
         </a>
     
@@ -36,31 +36,31 @@
             <img src="img/quadrado-vermelho-300x300.png" alt="Vendedor"> Cadastro de Vendedor 
         </a>
     
-        <a href="estoque.html">
+        <a href="cadastroFinalizadores.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Finalizadores
         </a>
 
-        <a href="estoque.html">
+        <a href="cadastroFornecedor.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Fornecedores
         </a>
 
 
-        <a href="estoque.html">
+        <a href="cadastroEstoque.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Itens de Estoque
         </a> 
 
-        <a href="estoque.html">
+        <a href="cadastroNota.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Nota Fiscais
         </a>
 
-        <a href="estoque.html">
+        <a href="cadastroFichaTec.html">
             <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Ficha Tecnica Do Produto
         </a>
     </ul>
 </div>
 
 <!-- Conteúdo principal -->
-<div class="c">
+<div class="cadastro">
     <h1>Cadastro de Cliente</h1>
 
     <form id="conteudo">
@@ -103,16 +103,21 @@
         </div>
 
         <div class="campo">
-            <label>Gênero:</label>
+            <label>Sexo:</label>
             <div class="radio-buttons">
                 <button type="button" id="masculino" onclick="selecionarGenero('masculino')">Masculino</button>
                 <button type="button" id="feminino" onclick="selecionarGenero('feminino')">Feminino</button>
                 <button type="button" id="outro" onclick="selecionarGenero('outro')">Outro</button>
             </div>
-            <input type="hidden" id="genero" name="genero" value="">
+            <input type="hidden" id="sexo" name="sexo" value="">
         </div>
         
-        <button type="submit">Cadastrar</button>
+        <div class="campo">
+            <div class="radio-buttons">
+                <button type="button" id="sim" onclick="selecionarOpcao('sim')">Confirmar</button>
+                <button type="button" id="nao" onclick="selecionarOpcao('nao')">Cancelar</button>
+        </div>
+        
     </form>
 </div>
 

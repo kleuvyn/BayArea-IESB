@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-    <title>Estoque</title>
+    <title>Cadastro de Vendedor</title>
 </head>
+<body>
 <!-- Barra de menu -->
 <div class="menu">
     <div class="menu-img">
@@ -57,54 +58,54 @@
         </a>
     </ul>
 </div>
-</div>
-    <!-- Cadastro de Estoque -->
+    <!-- Cadastro de Vendedor -->
     <div class="cadastro">
-        <h1>Cadastro de Estoque</h1>
-        <form id="cadastroEstoque">
+        <h1>Cadastro de Fornecedores</h1>
+
+        <form id="cadastroVendedor">
             <div class="campo">
-                <label for="produto">Código do Produto:</label>
-                <input type="text" id="produto" name="produto" required>
+                <label for="codigodoProduto">Código do Produto:</label>
+                <input type="text" id="codigodoProduto" name="codigodoProduto" required>
             </div>
 
-          
-        <div class="campo">
-            <label for="marca,">Nome do Produto:</label>
-            <input type="text" id="marca," name="marca,">
-        </div>
+            <div class="campo">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
 
             <div class="campo">
-                <label for="unidadeDeMedida">Unidade de Medida:</label>
-                <input type="text" id="unidadeDeMedida" name="unidadeDeMedida">
+                <label for="medida">Unidade de Medida:</label>
+                <input type="text" id="medida" name="medida">
             </div>
 
             <div class="campo">
                 <label for="grupoProduto">Grupo do Produto:</label>
-                <input type="text" id="grupoProduto" name="grupoProduto">
+                <input type="text" id="grupoProduto" name="grupoProduto" required>
             </div>
 
-              <div class="campo">
+            <div class="campo">
                 <label for="valorProduto">Valor do Produto:</label>
-                <input type="text" id="valorProduto" name="valorProduto">
+                <input type="text" id="valorProduto" name="valorProduto" required>
             </div>
 
             <div class="campo">
                 <label for="registroFiscal">Registro Fiscal:</label>
-                <input type="text" id="registroFiscal" name="registroFiscal">
+                <input type="text" id="registroFiscal" name="registroFiscal" required>
             </div>
 
-            <div class="campo">
-                <div class="radio-buttons">
-                    <button type="button" id="sim" onclick="selecionarOpcao('sim')">Confirmar</button>
-                    <button type="button" id="nao" onclick="selecionarOpcao('nao')">Cancelar</button>
-            </div>
+            
+        <div class="campo">
+            <div class="radio-buttons">
+                <button type="button" id="sim" onclick="selecionarOpcao('sim')">Confirmar</button>
+                <button type="button" id="nao" onclick="selecionarOpcao('nao')">Cancelar</button>
+        </div>
+
         </form>
-    </div>
+</div>
 
-    <!-- Rodapé -->
-    <!-- <div class="rodape">
-        <p>© IESB BayArea 2023</p>
-    </div> -->
-
+<!-- Rodapé -->
+<!-- <div class="rodape">
+    <p>© IESB BayArea 2023</p>
+</div> -->
 </body>
 </html>

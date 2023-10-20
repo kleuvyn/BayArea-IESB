@@ -22,36 +22,39 @@
 
 
     <ul id="menu-options">
-        <a href="index.html">
-            <img src="img/icons8-cliente-50.png" alt="Cliente"> Cadastro de Cliente
-        </a>
-    
-        <a href="vendedor.html">
-            <img src="img/icons8-vendedor-50.png" alt="Vendedor"> Cadastro de Vendedor 
-        </a>
-    
-        <a href="produtos.html">
-            <img src="img/icons8-produtos-50.png" alt="Produtos"> Cadastro de Produto
+        <div class="menu">
+
+        <a href="cadastroProdutos.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Produtos"> Cadastro de Produto
         </a>
 
-        <a href="estoque.html">
-            <img src="img/icons8-stocks-64.png" alt="Estoque"> Cadastro de Estoque
+        <a href="cadastroCliente.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Cliente"> Cadastro de Cliente
         </a>
     
-        <a href="vendas.html">
-            <img src="img/icons8-vendas-50.png" alt="Vendas"> Vendas
+        <a href="cadastroVendedor.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Vendedor"> Cadastro de Vendedor 
         </a>
     
-        <a href="pedidos.html">
-            <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
+        <a href="cadastroFinalizadores.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Finalizadores
         </a>
-    
-        <a href="registroPedido.html">
-            <img src="img/icons8-código-de-barras-80.png" alt="registro Pedido"> Registro de Pedido
+
+        <a href="cadastroFornecedor.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Fornecedores
         </a>
-    
-        <a href="enviados.html">
-            <img src="img/icons8-enviado-50.png" alt="Enviados"> Enviados
+
+
+        <a href="cadastroEstoque.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Itens de Estoque
+        </a> 
+
+        <a href="cadastroNota.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Nota Fiscais
+        </a>
+
+        <a href="cadastroFichaTec.html">
+            <img src="img/quadrado-vermelho-300x300.png" alt="Estoque"> Cadastro de Ficha Tecnica Do Produto
         </a>
     </ul>
 </div>
@@ -62,12 +65,12 @@
     <form id="cadastroProduto">
      
         <div class="campo">
-            <label for="nome">Nome do Produto:</label>
+            <label for="nome">Código Produto:</label>
             <input type="text" id="nome" name="nome" required>
         </div>
 
         <div class="campo">
-            <label for="marca,">Marca:</label>
+            <label for="marca,">Nome do Produto:</label>
             <input type="text" id="marca," name="marca,">
         </div>
 
@@ -77,31 +80,25 @@
         </div>
 
         <div class="campo">
-            <label for="estoque">Estoque Atual:</label>
+            <label for="estoque">Grupo de Estoque:</label>
             <input type="text" id="estoque" name="estoque">
         </div>
 
         <div class="campo">
-            <label for="preco">Preço:</label>
+            <label for="preco">Valor do Produto:</label>
             <input type="text" id="preco" name="preco">
         </div>
 
         <div class="campo">
-            <label for="fornecedor">Fornecedor:</label>
+            <label for="fornecedor">Registro Fiscal:</label>
             <input type="text" id="fornecedor" name="fornecedor">
         </div>
 
         <div class="campo">
-            <label for="dataDeFabricacaoEValidade">Data de Fabricação e Validade:</label>
-            <input type="date" id="dataDeFabricacaoEValidade" name="dataDeFabricacaoEValidade">
+            <div class="radio-buttons">
+                <button type="button" id="sim" onclick="selecionarOpcao('sim')">Confirmar</button>
+                <button type="button" id="nao" onclick="selecionarOpcao('nao')">Cancelar</button>
         </div>
-
-        <div class="campo">
-            <label for="descricao">Descrição do Produto:</label>
-            <textarea id="descricao" name="descricao" rows="4" required></textarea>
-        </div>
-
-        <button type="submit">Cadastrar</button>
     </form>
 </div>
 
