@@ -26,7 +26,7 @@ body {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
 }
 
@@ -124,6 +124,24 @@ body {
 #menu-toggle img {
     width: 25px;
     height: 25px;
+}
+
+.menu-img{
+    display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.img-iesb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #DA2A38;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .radio-buttons button {
