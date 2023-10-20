@@ -16,7 +16,7 @@ body {
 
 /* Estilos para a barra de menu à esquerda */
 .menu {
-    background-color: #dbdbdb;
+    background-color: #f6f6f6;
     font-style: italic;
     width: 250px;
     position: fixed;
@@ -47,8 +47,8 @@ body {
 }
 
 .menu a:hover {
-    background-color: #ff0000;
-    color: #fff;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 /* Estilos para o conteúdo principal */
@@ -128,8 +128,9 @@ body {
 
 .menu-img{
     display: flex;
-  justify-content: flex-start;
-  gap: 50px;
+    justify-content: flex-start;
+    gap: 50px;
+    
 }
 
 .img-iesb {
@@ -137,7 +138,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: #DA2A38;
-    font-family: Inter;
+    font-family: Inter,sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
