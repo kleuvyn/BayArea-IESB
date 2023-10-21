@@ -19,7 +19,7 @@
 </script>
 
     <!-- Conteúdo da página "Tela de Vendas" -->
-    <div class="cadastro">
+    <div class="cadastro radio-buttons">
         <h1>Vendas</h1>
         <form id="telaVendas">
             <div class="campo">
@@ -50,10 +50,13 @@
             <div class="campo">
                 <label for="entradaProduto">Adicionar Produto:</label>
                 <input type="text" id="entradaProduto" name="entradaProduto" placeholder="Digite o código, selecione ou leia o código de barras" required>
-            </div>       <button type="submit">Adicionar ao Carrinho</button>
+            </div>       
+            <button class="radio-buttons" type="submit">Adicionar ao Carrinho</button>
+
+           
         </form>
 
-            <div class="campo">
+            <div>
                 <label for="formaPagamento">Forma de Pagamento:</label>
                 <select id="formaPagamento" name="formaPagamento">
                     <option value="dinheiro">Dinheiro</option>
@@ -63,14 +66,11 @@
                     
                 </select>
             </div>
-    </div>
-        <button type="submit">Registrar Venda</button>
         </form>
-    </div>
-
-    <!-- Rodapé -->
-    <!-- <div class="rodape">
+        <button type="submit">Registrar Venda</button>
+    <!-- Rodapé --> 
+    <div class="rodape">
         <p>© IESB BayArea 2023</p>
-    </div> -->
+    </div>
 </body>
 </html>
