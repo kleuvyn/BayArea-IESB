@@ -13,6 +13,10 @@ body {
     align-items: center; /* Centralize o conteúdo verticalmente */
 }
 
+.elemento-escondido {
+    display: none;
+}
+
 
 /* Estilos para a barra de menu à esquerda */
 .menu {
@@ -28,6 +32,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+    color:#ff0000;
 }
 
 /* Estilize as imagens nos links do menu */
@@ -49,6 +54,80 @@ body {
 .menu a:hover {
     background-color: #FFFFFF;
     color: #000000;
+}
+
+/* Estilos para o botão de menu com imagem */
+#menu-toggle img {
+    width: 25px;
+    height: 25px;
+}
+
+.menu-img{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    
+}
+
+/* Estilos para o botão de menu */
+#menu-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Estilos para a lista de opções do menu */
+#menu-options {
+    padding: 0;
+    margin: 0;
+    display: none;
+    list-style-type: none;
+    overflow-y: auto;
+    
+}
+
+#menu-options.show-options {
+    display: block;
+}
+
+#menu-options li {
+    text-align: left;
+    margin-left: 10px;
+
+    
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+#menu-options a:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Estilos para os botões do menu */
+.menu-button {
+    width: 240px; 
+    height: 50px; 
+    text-align: eft; /* Alinhamento do texto à esquerda */
+    padding: 10px; /* Espaçamento interno para o texto */
+    display: flex; /* Usado para alinhar a imagem e o texto verticalmente */
+    align-items: center; /* Alinhar verticalmente ao centro */
+    background-color: #f0f0f0; /* Cor de fundo, ajuste conforme necessário */
+    border: none; /* Remova a borda do botão, se necessário */
+}
+
+/* Estilos para as imagens nos botões do menu */
+.menu-button img {
+    width: 25px; /* Defina o tamanho desejado */
+    height: 25px; /* Defina o tamanho desejado */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
 }
 
 /* Estilos para o conteúdo principal */
@@ -77,60 +156,18 @@ body {
 .campo input[type="text"],
 .campo input[type="email"],
 .campo input[type="date"] {
-    border: 1px solid rgba(255, 0, 0, 0.548);
+    border: 0.5px solid rgba(255, 0, 0, 0.548);
     background-color: #f803030c;
     padding: 8px;
-    border-radius: 5px;
 }
 
-/* Estilos para o botão de menu */
-#menu-toggle {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.opcoes-cadastro_exibir {
+    display: unset;
+    color: #ff0000;
 }
 
-/* Estilos para a lista de opções do menu */
-#menu-options {
+.lista-sem-estilo {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-#menu-options.show-options {
-    display: block;
-}
-
-#menu-options li {
-    text-align: left;
-    margin-left: 10px;
-}
-
-#menu-options a {
-    text-decoration: none;
-    color: #333;
-}
-
-#menu-options a:hover {
-    background-color: #ff0000;
-    color: #fff;
-}
-
-/* Estilos para o botão de menu com imagem */
-#menu-toggle img {
-    width: 25px;
-    height: 25px;
-}
-
-.menu-img{
-    display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    
 }
 
 .img-iesb {

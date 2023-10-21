@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Registro de Pedido</title>
 </head>
 <body>
@@ -16,81 +17,9 @@
         </button>
         <div class="img-iesb">
             <img src="img/iesb.png" alt="Menu" style="width: 80px; height: 80px;">
-            <span>PDV</span>
+            <span>##PDV##</span>
         </div>
     </div>
-
-
-    <ul id="menu-options">
-        <a href="index.html">
-            <img src="img/icons8-cliente-50.png" alt="Cliente"> Cadastro de Cliente
-        </a>
-    
-        <a href="vendedor.html">
-            <img src="img/icons8-vendedor-50.png" alt="Vendedor"> Cadastro de Vendedor 
-        </a>
-    
-        <a href="produtos.html">
-            <img src="img/icons8-produtos-50.png" alt="Produtos"> Cadastro de Produto
-        </a>
-
-        <a href="estoque.html">
-            <img src="img/icons8-stocks-64.png" alt="Estoque"> Cadastro de Estoque
-        </a>
-    
-        <a href="vendas.html">
-            <img src="img/icons8-vendas-50.png" alt="Vendas"> Vendas
-        </a>
-    
-        <a href="pedidos.html">
-            <img src="img/icons8-histórico-de-encomendas-50.png" alt="Pedidos"> Pedidos
-        </a>
-    
-        <a href="registroPedido.html">
-            <img src="img/icons8-código-de-barras-80.png" alt="registro Pedido"> Registro de Pedido
-        </a>
-    
-        <a href="enviados.html">
-            <img src="img/icons8-enviado-50.png" alt="Enviados"> Enviados
-        </a>
-    </ul>
-</div>
-    <!-- Conteúdo da página "Registro de Pedido" -->
-    <div class="cadastro">
-        <h1>Registro de Pedido</h1>
-        <form id="registroPedido">
-            <div class="campo">
-                <label for="cliente">Cliente:</label>
-                <select id="cliente" name="cliente">
-                    <option value="cliente1">Cliente 1</option>
-                    <option value="cliente2">Cliente 2</option>
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-            <div class="campo">
-                <label for="vendedor">Vendedor:</label>
-                <select id="vendedor" name="vendedor">
-                    <option value="vendedor1">Vendedor 1</option>
-                    <option value="vendedor2">Vendedor 2</option>
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-            <div class="campo">
-                <label for="produto">Produto:</label>
-                <select id="produto" name="produto">
-                    <option value="produto1">Produto 1</option>
-                    <option value="produto2">Produto 2</option>
-                    <!-- Adicione mais opções conforme necessário -->
-                </select>
-            </div>
-            <div class="campo">
-                <label for="quantidade">Quantidade:</label>
-                <input type="number" id="quantidade" name="quantidade" required>
-            </div>
-            <button type="submit">Registrar Pedido</button>
-        </form>
-    </div>
-
     <!-- Rodapé -->
     <!-- <div class="rodape">
         <p>© IESB BayArea 2023</p>
