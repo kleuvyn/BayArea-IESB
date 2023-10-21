@@ -194,6 +194,11 @@ body {
     background-color: #cc0000;
 }
 
+h2, h3 {
+    color: crimson;
+}
+
+
 /* Estilos para o rodapé */
 /* .rodape {
     background-color: #ff0000b7;
