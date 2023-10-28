@@ -44,7 +44,7 @@ model NotaFiscal {
   grupoProduto        String
   valorProduto        Float
   registroFiscal      String
-  dataEmissao    DateTime 
+  dataEmissao         DateTime
 
   @@map("TB_NOTA_FISCAL")
 }
