@@ -1,20 +1,7 @@
 import { PrismaClient } from '@prisma/client';
-// import { ClienteService } from 'src/cliente/cliente.service';
 
 export class NotaFiscalService {
   private prisma: PrismaClient = new PrismaClient();
-  // private clienteService: ClienteService;
-
-
-
-  constructor(
-    // prisma: PrismaClient,
-    // clienteService: ClienteService
-  ) {
-    // this.prisma = prisma;
-    // this.clienteService = clienteService;
-  }
-
 
 
   async findAllNotasFiscais() {
@@ -36,7 +23,8 @@ export class NotaFiscalService {
 
 
   async createNotaFiscal(data: any) {
-    // data.dataEmissao = new Date(2016, 2, 3).toISOString();
+    console.log(data)
+    data.dataEmissao = new Date(2016, 2, 3).toISOString();
 
     data.dataEmissao = undefined;
     return this.prisma.notaFiscal.create({
