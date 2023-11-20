@@ -7,9 +7,12 @@
 ## Tecnologias Utilizadas:
 
     • Insomnia: Ferramenta de teste de API utilizada para testar e depurar os endpoints de API do projeto.
-    • Node.js e TypeScript (TSC): O backend do projeto é desenvolvido em Node.js, uma plataforma de código aberto que permite a execução de código JavaScript no servidor. O TypeScript é usado para adicionar tipagem estática ao JavaScript, tornando o código mais seguro e fácil de manter.
+    • Node.js e TypeScript (TSC): O backend do projeto é desenvolvido em Node.js, uma plataforma de código aberto
+    que permite a execução de código JavaScript no servidor. O TypeScript é usado para adicionar tipagem estática ao JavaScript,
+    tornando o código mais seguro e fácil de manter.
     • MySQL: Sistema de gerenciamento de banco de dados usado para armazenar dados relacionados às transações comerciais.
-    • Framework NestJS e TypeScript: Para criar uma estrutura robusta e escalável para o backend do sistema, a equipe utiliza o framework NestJS em conjunto com TypeScript. NestJS segue os princípios do Angular e fornece uma arquitetura modular e fácil de manter.
+    • Framework NestJS e TypeScript: Para criar uma estrutura robusta e escalável para o backend do sistema, a equipe utiliza o 
+    framework NestJS em conjunto com TypeScript. NestJS segue os princípios do Angular e fornece uma arquitetura modular e fácil de manter.
 
 
 ## Rodando localmente
